@@ -23,5 +23,7 @@
 	<div class="logout">
 	<h2>You have logged out.</h2>
 	</div>
+	
+	<a href="index.jsp">Index</a>
 </body>
 </html>

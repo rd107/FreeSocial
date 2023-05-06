@@ -86,8 +86,9 @@
         <div class="row">
             <div class="col-md-6">
                 <div id="search-box">
-                <form action="search-record.jsp">
-                    <input type="text" name="search-friend" placeholder="Search Friends">
+                <form action="search-record.jsp" method="post">
+                    <input type="text" name="search-firstname" placeholder="Search First Name">
+                    <input type="text" name="search-lastname" placeholder="Search Last Name">
                     <button class="btn btn-primary">Search</button>
                     </form>
                 </div>
@@ -98,7 +99,7 @@
                         <a href="home.jsp"><img class="img-rounded" src="/FreeSocial/src/main/webapp/photo/3.jpg"><%= firstname%></a>
                     </li>
                     <li>
-                        <a href="/">Friend Requests</a>
+                        <a href="friendrequests.jsp">Friend Requests</a>
                         <span class="mess-notif">2</span>
                     </li>
                     <li>
@@ -136,6 +137,9 @@
 	<a href="profile.jsp">Edit Profile</a>
 	<br>
 	<br>
+	
+	<a href="friendlist.jsp">Friends</a>
+	
 	<a href="logout.jsp">Log out</a>
 	
 	<%
